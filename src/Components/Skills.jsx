@@ -36,7 +36,7 @@ const Skills = () => {
       <div className="absolute inset-0 max-w-[90%] mx-auto h-[80%] my-auto mx-atuo z-20 ">
         <div className="flex flex-col xl:flex-row items-center justify-evenly h-full w-full z-30 gap-x-4 2xl:gap-x-8 gap-y-4 ">
           {/* forntend  */}
-          <div className="flex flex-col justify-stretch bg-card-bg-dark backdorp-blur-lg w-[95%] h-[60%] md:w-[80%] md:h-[30%] lg:w-[90%] lg:h-[90%] xl:h-[60%] rounded-lg shadow-lg px-6 py-2">
+          <div className="flex flex-col justify-stretch bg-card-bg-dark  backdorp-blur-lg w-[95%] h-[60%] md:w-[80%] md:h-[30%] lg:w-[90%] lg:h-[90%] xl:h-[60%]  rounded-lg shadow-lg px-6 py-2">
             <HeaderText type="teal">
               <StaggerdText>Frontend</StaggerdText>
             </HeaderText>
@@ -75,7 +75,7 @@ const Skills = () => {
           </div>
 
           {/* Backend */}
-          <div className="flex flex-col justify-stretch bg-card-bg-dark  backdorp-blur-lg w-[95%] h-[60%] md:w-[80%] md:h-[30%] lg:w-[90%] lg:h-[90%] xl:h-[60%]   rounded-lg shadow-lg px-6 py-2">
+          <div className="flex flex-col justify-stretch bg-card-bg-dark  backdorp-blur-lg w-[95%] h-[60%] md:w-[80%] md:h-[30%] lg:w-[90%] lg:h-[90%] xl:h-[60%]  rounded-lg shadow-lg px-6 py-2">
             <HeaderText type="teal">
               <StaggerdText>Backend</StaggerdText>
             </HeaderText>
