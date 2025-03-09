@@ -8,7 +8,7 @@ const style = {
 const DURATION = 0.25;
 const STAGGER = 0.025;
 
-const StaggerdText = ({ children, type }) => {
+const StaggerdText = ({ type, children }) => {
   return (
     <motion.span
       initial="initail"

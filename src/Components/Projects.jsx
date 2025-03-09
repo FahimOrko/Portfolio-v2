@@ -2,12 +2,10 @@ import React from "react";
 
 const Projects = () => {
   return (
-    <div
-      id="projects"
-      className="h-[100dvh] w-full bg-green-200 object-contain object-center"
-    >
-      Projects
-    </div>
+    <section id="projects" className="relative h-[100dvh] w-full">
+      <div className="absolute inset-0 bg-red-100 bg-cover bg-right-top bg-no-repeat z-0 " />
+      <div>Projects</div>
+    </section>
   );
 };
 

@@ -9,7 +9,8 @@ import ParaTextSecondary from "./ParaTextSecondary";
 
 const Hero = () => {
   return (
-    <>
+    <section id="hero">
+      {/* bg video  */}
       <video
         src={videoBg}
         alt=""
@@ -18,7 +19,8 @@ const Hero = () => {
         loop
         className="relative min-w-full h-[100dvh] object-center object-cover z-1 blur-sm opacity-80"
       />
-      <div id="hero" className="h-[100dvh] w-full absolute top-0">
+      {/* content  */}
+      <div className="h-[100dvh] w-full absolute top-0">
         <div className="max-w-xs lg:max-w-4xl xl:max-w-6xl mx-auto h-full flex items-center">
           <div className="flex flex-col-reverse lg:flex-row justify-stretch items-center bg-slate-700  bg-opacity-30 backdrop-blur-lg rounded-lg w-full py-6 px-3 lg:py-10 lg:px-6">
             <div className="w-full text-white">
@@ -57,7 +59,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </>
+    </section>
   );
 };
 

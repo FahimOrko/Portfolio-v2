@@ -2,7 +2,72 @@
   "hash": "e1bb62e6",
   "configHash": "74206068",
   "lockfileHash": "0a060855",
-  "browserHash": "dc89181e",
-  "optimized": {},
-  "chunks": {}
+  "browserHash": "7a34d9bc",
+  "optimized": {
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "31e27e9f",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "b65067e0",
+      "needsInterop": true
+    },
+    "@mui/icons-material/Home": {
+      "src": "../../node_modules/@mui/icons-material/esm/Home.js",
+      "file": "@mui_icons-material_Home.js",
+      "fileHash": "3cfa7743",
+      "needsInterop": false
+    },
+    "@mui/icons-material/Info": {
+      "src": "../../node_modules/@mui/icons-material/esm/Info.js",
+      "file": "@mui_icons-material_Info.js",
+      "fileHash": "388b6adc",
+      "needsInterop": false
+    },
+    "@mui/icons-material/LightbulbCircle": {
+      "src": "../../node_modules/@mui/icons-material/esm/LightbulbCircle.js",
+      "file": "@mui_icons-material_LightbulbCircle.js",
+      "fileHash": "2edd683e",
+      "needsInterop": false
+    },
+    "@mui/icons-material/BusinessCenter": {
+      "src": "../../node_modules/@mui/icons-material/esm/BusinessCenter.js",
+      "file": "@mui_icons-material_BusinessCenter.js",
+      "fileHash": "d3703634",
+      "needsInterop": false
+    },
+    "@mui/icons-material/Assignment": {
+      "src": "../../node_modules/@mui/icons-material/esm/Assignment.js",
+      "file": "@mui_icons-material_Assignment.js",
+      "fileHash": "d24d44bc",
+      "needsInterop": false
+    },
+    "@mui/icons-material/Contacts": {
+      "src": "../../node_modules/@mui/icons-material/esm/Contacts.js",
+      "file": "@mui_icons-material_Contacts.js",
+      "fileHash": "35fe86aa",
+      "needsInterop": false
+    },
+    "framer-motion": {
+      "src": "../../node_modules/framer-motion/dist/es/index.mjs",
+      "file": "framer-motion.js",
+      "fileHash": "28e7e3cf",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-MJBXEO3L": {
+      "file": "chunk-MJBXEO3L.js"
+    },
+    "chunk-R7PD5QU4": {
+      "file": "chunk-R7PD5QU4.js"
+    },
+    "chunk-UCZTVSZO": {
+      "file": "chunk-UCZTVSZO.js"
+    }
+  }
 }
