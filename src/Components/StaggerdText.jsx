@@ -25,7 +25,7 @@ const StaggeredText = ({ type, children }) => {
 
   return (
     <>
-      <span className="block md:hidden">
+      <span className="inline-block md:hidden">
         <span className={`inline-block relative ${style[type]}`}>
           {children}
         </span>
