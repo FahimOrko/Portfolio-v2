@@ -24,50 +24,60 @@ const StaggeredText = ({ type, children }) => {
   }, []);
 
   return (
-    <motion.span
-      initial="initial"
-      whileHover={isLargeScreen ? "hovered" : ""}
-      className={`inline-block relative overflow-clip whitespace-nowrap ${style[type]}`}
-    >
-      <div className={`relative ${style[type]}`}>
-        {children.split("").map((item, idx) => (
-          <motion.span
-            key={idx}
-            variants={
-              isLargeScreen
-                ? { initial: { y: 0 }, hovered: { y: "-100%" } }
-                : {}
-            }
-            transition={{
-              duration: DURATION,
-              delay: STAGGER * idx,
-              ease: "easeInOut",
-            }}
-            className={`inline-block ${style[type]}`}
-          >
-            {item}
-          </motion.span>
-        ))}
-      </div>
-      {isLargeScreen && (
-        <div className={`absolute ${style[type]}`}>
-          {children.split("").map((item, idx) => (
-            <motion.span
-              key={idx}
-              variants={{ initial: { y: 0 }, hovered: { y: "-100%" } }}
-              transition={{
-                duration: DURATION,
-                delay: STAGGER * idx,
-                ease: "easeInOut",
-              }}
-              className={`inline-block ${style[type]}`}
-            >
-              {item}
-            </motion.span>
-          ))}
-        </div>
-      )}
-    </motion.span>
+    <>
+      <span className="block md:hidden">
+        <span className={`inline-block relative ${style[type]}`}>
+          {children}
+        </span>
+      </span>
+
+      <span className="hidden md:inline-block">
+        <motion.span
+          initial="initial"
+          whileHover={isLargeScreen ? "hovered" : ""}
+          className={`inline-block relative overflow-clip whitespace-nowrap ${style[type]}`}
+        >
+          <div className={`relative ${style[type]}`}>
+            {children.split("").map((item, idx) => (
+              <motion.span
+                key={idx}
+                variants={
+                  isLargeScreen
+                    ? { initial: { y: 0 }, hovered: { y: "-100%" } }
+                    : {}
+                }
+                transition={{
+                  duration: DURATION,
+                  delay: STAGGER * idx,
+                  ease: "easeInOut",
+                }}
+                className={`inline-block ${style[type]}`}
+              >
+                {item}
+              </motion.span>
+            ))}
+          </div>
+          {isLargeScreen && (
+            <div className={`absolute ${style[type]}`}>
+              {children.split("").map((item, idx) => (
+                <motion.span
+                  key={idx}
+                  variants={{ initial: { y: 0 }, hovered: { y: "-100%" } }}
+                  transition={{
+                    duration: DURATION,
+                    delay: STAGGER * idx,
+                    ease: "easeInOut",
+                  }}
+                  className={`inline-block ${style[type]}`}
+                >
+                  {item}
+                </motion.span>
+              ))}
+            </div>
+          )}
+        </motion.span>
+      </span>
+    </>
   );
 };
 

@@ -18,7 +18,7 @@ const Hero = () => {
         muted
         loop
         playsInline
-        className="relative min-w-full h-[100dvh] object-cover object-center z-1 blur-sm opacity-80 sm:h-auto"
+        className="relative min-w-full h-[100dvh] object-cover object-center z-1 blur-sm opacity-80"
       />
 
       {/* content  */}
