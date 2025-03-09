@@ -40,7 +40,6 @@ const Skills = () => {
             <HeaderText type="teal">
               <StaggerdText>Frontend</StaggerdText>
             </HeaderText>
-
             <SkillItemSections>
               <SkillItemCard>
                 <ReactIcon />
