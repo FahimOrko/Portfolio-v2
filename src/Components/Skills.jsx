@@ -27,7 +27,7 @@ const Skills = () => {
   return (
     <section
       id="skills"
-      className="relative h-[170dvh] sm:h-[140dvh] md:h-[100dvh] lg:h-[70dvh] xl:h-[40dvh] 2xl:h-[60dvh] w-full"
+      className="relative h-[170dvh] sm:h-[140dvh] md:h-[100dvh] lg:h-[70dvh] w-full"
     >
       {/* Image Layer */}
       <div className="absolute inset-0 bg-midnight-dusk-only bg-cover bg-center z-0" />
