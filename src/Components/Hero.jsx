@@ -17,8 +17,10 @@ const Hero = () => {
         autoPlay
         muted
         loop
-        className="relative min-w-full h-[100dvh] object-center object-cover z-1 blur-sm opacity-80"
+        playsInline
+        className="relative min-w-full h-[100dvh] object-cover object-center z-1 blur-sm opacity-80 sm:h-auto"
       />
+
       {/* content  */}
       <div className="h-[100dvh] w-full absolute top-0">
         <div className="max-w-xs lg:max-w-4xl xl:max-w-6xl mx-auto h-full flex items-center">
