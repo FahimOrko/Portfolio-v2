@@ -2,12 +2,9 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <div
-      id="contact"
-      className="h-[100dvh] w-full bg-red-200 object-contain object-center"
-    >
-      Contact
-    </div>
+    <section id="contact" className="h-[100dvh] w-full relative">
+      <div className="absolute inset-0 bg-midnight-dusk bg-cover bg-left-bottom bg-no-repeat z-0 lg:h-[100dvh]" />
+    </section>
   );
 };
 
