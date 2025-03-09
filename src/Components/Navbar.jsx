@@ -28,7 +28,7 @@ const Navbar = () => {
   }, [isSmallScreen]);
 
   return (
-    <nav className="fixed z-50 top-[30%] left-4 h-fit lg:h-[40vh] w-auto lg:w-fit bg-white bg-opacity-20 backdrop-blur-sm shadow-lg rounded-lg ">
+    <nav className="fixed z-50 top-[30%] left-4 h-[50dvh] lg:h-[40dvh] w-auto lg:w-fit bg-white bg-opacity-20 backdrop-blur-sm shadow-lg rounded-lg ">
       <ul className="h-full flex justify-between items-center flex-col px-2 lg:px-4 py-6 gap-y-4">
         <NavbarItems label={navinfo[0]}>
           <a href="#hero">
