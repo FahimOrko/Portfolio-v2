@@ -1,11 +1,11 @@
-import "../index.css";
+import "../../index.css";
 import videoBg from "/HeroBg.mp4";
-import Button from "./Button";
-import StaggerdText from "./StaggerdText";
-import HeaderText from "./HeaderText";
-import HeaderTextSecondary from "./HeaderTextSecondary";
-import ParaText from "./ParaText";
-import ParaTextSecondary from "./ParaTextSecondary";
+import Button from "../Button";
+import StaggerdText from "../StaggerdText";
+import HeaderText from "../HeaderText";
+import HeaderTextSecondary from "../HeaderTextSecondary";
+import ParaText from "../ParaText";
+import ParaTextSecondary from "../ParaTextSecondary";
 
 const Hero = () => {
   return (
@@ -31,7 +31,7 @@ const Hero = () => {
                 <StaggerdText type="teal">Abrar</StaggerdText>{" "}
                 <StaggerdText type="teal">Orko</StaggerdText>
               </HeaderText>
-              <HeaderTextSecondary>
+              <HeaderTextSecondary type="heroSection">
                 A Full-Stack Web Developer
               </HeaderTextSecondary>
               <ParaText>Based in Finland</ParaText>

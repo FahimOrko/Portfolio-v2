@@ -1,11 +1,11 @@
 import "./index.css";
-import Navbar from "./Components/Navbar";
-import Hero from "./Components/Hero";
-import About from "./Components/About";
-import Skills from "./Components/Skills";
-import Expirence from "./Components/Expirence";
-import Projects from "./Components/Projects";
-import Contact from "./Components/Contact";
+import Navbar from "./Components/Navbar/Navbar";
+import Hero from "./Components/Hero/Hero";
+import About from "./Components/About/About";
+import Skills from "./Components/Skills/Skills";
+import Expirence from "./Components/Expirence/Expirence";
+import Projects from "./Components/Projects/Projects";
+import Contact from "./Components/Contact/Contact";
 
 export default function App() {
   return (

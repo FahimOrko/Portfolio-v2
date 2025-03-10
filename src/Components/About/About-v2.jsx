@@ -1,7 +1,7 @@
 import React from "react";
 import videoBg from "/AboutBg.mp4";
-import StaggerdText from "./StaggerdText";
-import HeaderText from "./HeaderText";
+import StaggerdText from "../StaggerdText";
+import HeaderText from "../HeaderText";
 
 const About = () => {
   return (

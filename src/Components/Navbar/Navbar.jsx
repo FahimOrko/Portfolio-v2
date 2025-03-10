@@ -1,4 +1,4 @@
-import { navinfo } from "../data/navinfo";
+import { navinfo } from "../../data/navinfo";
 import HomeIcon from "@mui/icons-material/Home";
 import InfoIcon from "@mui/icons-material/Info";
 import LightbulbCircleIcon from "@mui/icons-material/LightbulbCircle";

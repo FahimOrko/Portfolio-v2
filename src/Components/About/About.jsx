@@ -1,9 +1,9 @@
 import React from "react";
 import myCv from "/my-cv.pdf";
-import StaggerdText from "./StaggerdText";
-import HeaderText from "./HeaderText";
-import ParaTextSecondary from "./ParaTextSecondary";
-import Button from "./Button";
+import StaggerdText from "../StaggerdText";
+import HeaderText from "../HeaderText";
+import ParaTextSecondary from "../ParaTextSecondary";
+import Button from "../Button";
 
 const About = () => {
   return (
