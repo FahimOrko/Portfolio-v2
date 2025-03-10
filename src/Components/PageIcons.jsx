@@ -1,5 +1,19 @@
 const defaultClass = "h-4 w-4 sm:h-6 sm:w-6";
 
+export const CircleIcon = ({ className = " h-2 w-2 " }) => {
+  const fill = "#00C9A7";
+  return (
+    <svg
+      className={className}
+      viewBox="0 0 100 100"
+      fill={fill}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <circle r="45" cx="50" cy="50" fill="#00C9A7" />
+    </svg>
+  );
+};
+
 export const ReactIcon = ({ className = defaultClass }) => {
   return (
     <svg

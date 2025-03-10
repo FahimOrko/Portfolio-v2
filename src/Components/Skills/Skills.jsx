@@ -16,12 +16,12 @@ import {
   ReduxIcon,
   SupabaseIcon,
   TailwindIcon,
-} from "./PageIcons";
-import HeaderText from "./HeaderText";
-import ParaTextSecondary from "./ParaTextSecondary";
+} from "../PageIcons";
+import HeaderText from "../HeaderText";
+import ParaTextSecondary from "../ParaTextSecondary";
 import SkillItemCard from "./SkillItemCard";
 import SkillItemSections from "./SkillItemSections";
-import StaggerdText from "./StaggerdText";
+import StaggerdText from "../StaggerdText";
 
 const Skills = () => {
   return (
