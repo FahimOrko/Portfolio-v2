@@ -21,8 +21,8 @@ export default {
           "url('./assets/midnightDuskFlipedMask.svg')",
 
         // projects
-        "movie-reviews": "url('./Projects/MovieReviews.svg')",
-        "coming-soon": "url('./Projects/ComingSoon.svg')",
+        "movie-reviews": "url('/Projects/MovieReviews.svg')",
+        "coming-soon": "url('/Projects/ComingSoon.svg')",
       },
       fontFamily: {
         sans: ["Inter", "sans-serif"],
