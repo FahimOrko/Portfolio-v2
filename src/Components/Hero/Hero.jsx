@@ -47,7 +47,13 @@ const Hero = () => {
                   <a href="#projects">View my work</a>
                 </Button>
                 <Button>
-                  <a href="#contact">Contact Me</a>
+                  <a
+                    href="mailto:fahimorko4122@gmail.com?subject=Inquiry&body=Hello,"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Contact Me
+                  </a>
                 </Button>
               </div>
             </div>

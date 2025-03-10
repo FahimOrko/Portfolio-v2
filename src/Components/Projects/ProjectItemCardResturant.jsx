@@ -44,7 +44,7 @@ const ProjectItemCardResturant = () => {
           <ParaTextSecondary type="pro">
             A resutrant app where you can order food
           </ParaTextSecondary>
-          <div className="flex justify-between py-2 hidden">
+          <div className=" justify-between py-2 hidden">
             <LinkButton
               type="pro"
               href="https://movie-reviews-website.vercel.app/"
