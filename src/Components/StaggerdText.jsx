@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 const style = {
   white: "text-white",
   teal: "text-teal-300 font-bold",
+  cyan: "text-cosmic-cyan-start  font-bold",
 };
 
 const DURATION = 0.25;

@@ -3,6 +3,7 @@ import { CircleIcon } from "../PageIcons";
 import HeaderTextSecondary from "../HeaderTextSecondary";
 import ParaTextSecondary from "../ParaTextSecondary";
 import StaggeredText from "../StaggerdText";
+import LinkButton from "../LinkButton";
 
 const ExpirenceCardLeft = ({ workData, num }) => {
   if (workData) {
@@ -19,30 +20,28 @@ const ExpirenceCardLeft = ({ workData, num }) => {
                   {workData.company}
                 </span>
               </HeaderTextSecondary>
-              <HeaderTextSecondary type="expSectionSecondary">
+              <HeaderTextSecondary type="expSection">
                 <span className="text-cosmic-cyan-start">{workData.date}</span>
               </HeaderTextSecondary>
             </div>
             <div>
               {workData.description?.map((item, idx) => (
                 <div
-                  className="flex items-center gap-x-1 px-2 sm:px-4"
+                  className="flex items-start  gap-x-1 px-2 sm:px-4"
                   key={idx}
                 >
-                  <CircleIcon />
+                  <div className="mt-2">
+                    <CircleIcon />
+                  </div>
                   <ParaTextSecondary type="exp">{item}</ParaTextSecondary>
                 </div>
               ))}
             </div>
             <div className="mt-2">
               {workData.learnMore && (
-                <a href={workData.learnMore} target="_blank">
-                  {" "}
-                  <span className="text-xs sm:text-sm lg:text-md px-4 mt-2 underline text-cosmic-cyan-start hover:text-cosmic-cyan-via duration-300 transition-all">
-                    {" "}
-                    Learn More
-                  </span>
-                </a>
+                <LinkButton type="exp" href={workData.learnMore}>
+                  Learn More
+                </LinkButton>
               )}
             </div>
           </div>

@@ -8,6 +8,8 @@ const ParaTextSecondary = ({ type, children }) => {
     skill:
       "text-center text-white text-xs sm:text-sm lg:text-md px-1 py-.5 lg:px-2 lg:py-1 font-semibold",
     exp: "text-white text-xs sm:text-sm lg:text-md px-1 py-.5 px-2 lg:px-4 lg:py-1 font-normal",
+    pro: "text-white text-xs sm:text-sm lg:text-md font-normal",
+    proItem: "text-white text-xs px-2 py-1 font-normal",
   };
   return <div className={`${style[type]}`}>{children}</div>;
 };

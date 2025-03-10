@@ -4,6 +4,7 @@ const HeaderText = ({ type, children }) => {
   const style = {
     teal: "text-teal-300 font-bold",
     white: "text-white font-bold",
+    cyan: "text-cosmic-cyan-start font-bold",
   };
   return (
     <h1

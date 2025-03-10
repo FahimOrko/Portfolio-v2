@@ -19,6 +19,10 @@ export default {
         "midnight-dusk-fliped": "url('./assets/midnightDuskFliped.svg')",
         "midnight-dusk-mask-fliped":
           "url('./assets/midnightDuskFlipedMask.svg')",
+
+        // projects
+        "movie-reviews": "url('./Projects/MovieReviews.svg')",
+        "coming-soon": "url('./Projects/ComingSoon.svg')",
       },
       fontFamily: {
         sans: ["Inter", "sans-serif"],
