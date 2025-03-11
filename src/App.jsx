@@ -6,6 +6,7 @@ import Skills from "./Components/Skills/Skills";
 import Expirence from "./Components/Expirence/Expirence";
 import Projects from "./Components/Projects/Projects";
 import Contact from "./Components/Contact/Contact";
+import Footer from "./Components/Footer";
 
 export default function App() {
   return (
@@ -16,7 +17,7 @@ export default function App() {
       <Skills />
       <Expirence />
       <Projects />
-      {/* <Contact /> */}
+      <Footer />
     </div>
   );
 }

@@ -33,11 +33,10 @@ const NavbarItems = ({ children, label }) => {
       whileTap={{ scale: 0.95 }}
       onMouseEnter={() => !isMobile && setIsHovered(true)}
       onMouseLeave={() => !isMobile && setIsHovered(false)}
-      onClick={(e) => {
-        e.stopPropagation(); // Prevent click from closing instantly
+      onClick={() => {
         if (isMobile) setIsHovered(!isHovered);
       }}
-      className="relative text-white cursor-pointer flex items-center justify-center"
+      className="relative text-white hover:text-cosmic-cyan-start cursor-pointer flex items-center justify-center"
     >
       {children}
 
@@ -47,7 +46,7 @@ const NavbarItems = ({ children, label }) => {
           animate={{ opacity: 1, x: 15, y: -1 }}
           exit={{ opacity: 0, x: 10, y: 0 }}
           transition={{ duration: 0.3, ease: "easeInOut" }}
-          className="absolute left-8 bg-white bg-opacity-10 backdrop-blur-sm text-white rounded shadow-lg text-sm px-2 py-1"
+          className="absolute left-8 bg-white bg-opacity-10 backdrop-blur-sm text-white  rounded shadow-lg text-sm px-2 py-1"
         >
           {label}
         </motion.p>

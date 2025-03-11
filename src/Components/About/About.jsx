@@ -6,6 +6,14 @@ import ParaTextSecondary from "../ParaTextSecondary";
 import Button from "../Button";
 
 const About = () => {
+  const onClick = () => {
+    const link = document.createElement("a");
+    link.href = myCv;
+    link.download = "Fahim-Orko-CV.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
   return (
     <>
       <section id="about" className="relative h-[120dvh] w-full">
@@ -44,11 +52,7 @@ const About = () => {
               </ParaTextSecondary>
             </div>
 
-            <Button>
-              <a href={myCv} download="Fahim-Orko-CV.pdf">
-                Download My CV
-              </a>
-            </Button>
+            <Button onClick={onClick}>Download My CV</Button>
           </div>
         </div>
       </section>
