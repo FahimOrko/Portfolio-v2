@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="fixed left-[32%] bottom-4 w-1/3 bg-card-bg-light backdrop-blur-sm shadow-lg py-2 lg:py-4 px-6 rounded-lg flex justify-center items-center gap-6 z-50">
+    <footer className="fixed left-[32%] bottom-4 w-1/3 bg-card-bg-light backdrop-blur-sm shadow-lg py-2 lg:py-4 px-6 rounded-lg flex justify-center items-center gap-6 z-40">
       <a
         href="https://github.com/FahimOrko"
         target="_blank"

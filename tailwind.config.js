@@ -23,6 +23,7 @@ export default {
         sans: ["Inter", "sans-serif"],
       },
       colors: {
+        "cosmic-cyan-hover": "#66E5D0",
         "cosmic-cyan-start": "#00C9A7",
         "cosmic-cyan-via": "#048E90",
         "cosmic-cyan-end": "#005F73",
