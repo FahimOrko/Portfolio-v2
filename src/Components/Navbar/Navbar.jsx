@@ -19,7 +19,7 @@ const Navbar = () => {
       setIsSmallScreen(window.innerWidth < 1024);
     };
 
-    isSmallScreen ? setFontSize("inherit") : setFontSize("medium");
+    isSmallScreen ? setFontSize("small") : setFontSize("medium");
 
     window.addEventListener("resize", handleResize);
 
@@ -28,7 +28,7 @@ const Navbar = () => {
   }, [isSmallScreen]);
 
   return (
-    <nav className="fixed z-50 top-[30%] left-4 h-[50dvh] lg:h-[40dvh] w-auto lg:w-fit bg-white bg-opacity-20 backdrop-blur-sm shadow-lg rounded-lg ">
+    <nav className="fixed z-50 top-[26%] left-4 h-[50dvh] lg:h-[40dvh] w-auto lg:w-fit bg-card-bg-light backdrop-blur-sm shadow-lg rounded-lg ">
       <ul className="h-full flex justify-between items-center flex-col px-2 lg:px-4 py-6 gap-y-4">
         <NavbarItems label={navinfo[0]}>
           <a href="#hero">
@@ -57,12 +57,6 @@ const Navbar = () => {
         <NavbarItems label={navinfo[4]}>
           <a href="#projects">
             <AssignmentIcon fontSize={fontsize} />
-          </a>
-        </NavbarItems>
-
-        <NavbarItems label={navinfo[5]}>
-          <a href="#contact">
-            <ContactsIcon fontSize={fontsize} />
           </a>
         </NavbarItems>
       </ul>

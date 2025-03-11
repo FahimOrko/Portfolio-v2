@@ -8,6 +8,22 @@ import ParaText from "../ParaText";
 import ParaTextSecondary from "../ParaTextSecondary";
 
 const Hero = () => {
+  const onClick = () => {
+    const element = document.getElementById("projects");
+    if (element) {
+      const offset = element.getBoundingClientRect().height / 2; // Get half of the element's height
+      window.scrollTo({
+        top: element.offsetTop - window.innerHeight / 2 + offset, // Adjust to center it
+        behavior: "smooth",
+      });
+    }
+  };
+
+  const handleEmailClick = () => {
+    window.location.href =
+      "mailto:fahimorko4122@gmail.com?subject=Inquiry&body=Hello,";
+  };
+
   return (
     <section id="hero">
       {/* bg video  */}
@@ -43,18 +59,8 @@ const Hero = () => {
                 creating scalable and user-friendly web applications.
               </ParaTextSecondary>
               <div className="flex items-center justify-center gap-x-3 lg:gap-x-6 mb-4 lg:mb-8">
-                <Button>
-                  <a href="#projects">View my work</a>
-                </Button>
-                <Button>
-                  <a
-                    href="mailto:fahimorko4122@gmail.com?subject=Inquiry&body=Hello,"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Contact Me
-                  </a>
-                </Button>
+                <Button onClick={onClick}>View my work</Button>
+                <Button onClick={handleEmailClick}>Contact Me</Button>
               </div>
             </div>
             <div className="w-full flex justify-center py-6 lg:py-10 place-items-start lg:place-items-end">
