@@ -4,6 +4,7 @@ import HeaderTextSecondary from "../HeaderTextSecondary";
 import ParaTextSecondary from "../ParaTextSecondary";
 import StaggeredText from "../StaggerdText";
 import LinkButton from "../LinkButton";
+import Reveal from "../Reveal";
 
 const ExpirenceCardLeft = ({ workData, num }) => {
   if (workData) {
@@ -13,17 +14,28 @@ const ExpirenceCardLeft = ({ workData, num }) => {
           <div className="flex flex-col justify-between w-[90%] bg-card-bg-dark mx-6 px-4 py-6 rounded-lg shadow-lg border-4 border-cosmic-cyan-start hover:border-cosmic-cyan-end transition-all duration-300">
             <div className="flex justify-start divide-x-4 divide-cosmic-cyan-end items-center">
               <HeaderTextSecondary type="expSection">
-                <span className="text-cosmic-cyan-start">{workData.title}</span>
+                <Reveal>
+                  <span className="text-cosmic-cyan-start">
+                    {workData.title}
+                  </span>
+                </Reveal>
               </HeaderTextSecondary>
               <HeaderTextSecondary type="expSection">
-                <span className="text-cosmic-cyan-start">
-                  {workData.company}
-                </span>
+                <Reveal>
+                  <span className="text-cosmic-cyan-start">
+                    {workData.company}
+                  </span>
+                </Reveal>
               </HeaderTextSecondary>
               <HeaderTextSecondary type="expSection">
-                <span className="text-cosmic-cyan-start">{workData.date}</span>
+                <Reveal>
+                  <span className="text-cosmic-cyan-start">
+                    {workData.date}
+                  </span>
+                </Reveal>
               </HeaderTextSecondary>
             </div>
+
             <div>
               {workData.description?.map((item, idx) => (
                 <div
@@ -33,15 +45,20 @@ const ExpirenceCardLeft = ({ workData, num }) => {
                   <div className="mt-2">
                     <CircleIcon />
                   </div>
-                  <ParaTextSecondary type="exp">{item}</ParaTextSecondary>
+                  <Reveal>
+                    <ParaTextSecondary type="exp">{item}</ParaTextSecondary>
+                  </Reveal>
                 </div>
               ))}
             </div>
+
             <div className="mt-2">
               {workData.learnMore && (
-                <LinkButton type="exp" href={workData.learnMore}>
-                  Learn More
-                </LinkButton>
+                <Reveal>
+                  <LinkButton type="exp" href={workData.learnMore}>
+                    Learn More
+                  </LinkButton>
+                </Reveal>
               )}
             </div>
           </div>

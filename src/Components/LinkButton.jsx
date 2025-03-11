@@ -1,4 +1,5 @@
 import React from "react";
+import Reveal from "./Reveal";
 
 const LinkButton = ({ type, href, children }) => {
   const style = {
@@ -8,7 +9,7 @@ const LinkButton = ({ type, href, children }) => {
   return (
     <a href={href} target="_blank">
       {" "}
-      <span className={`${style[type]}`}> {children}</span>
+      <span className={`${style[type]}`}>{children}</span>
     </a>
   );
 };

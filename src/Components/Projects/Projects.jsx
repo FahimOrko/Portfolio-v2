@@ -3,6 +3,7 @@ import StaggeredText from "../StaggerdText";
 import HeaderText from "../HeaderText";
 import ResturantIo from "./ResturantIo";
 import MovieReviews from "./MovieReviews";
+import Reveal from "../Reveal";
 
 const Projects = () => {
   return (
@@ -17,9 +18,11 @@ const Projects = () => {
       <div className="absolute inset-0 max-w-[80%] sm:max-w-[90%] mx-auto h-[140dvh] mt-[60dvh] md:h-[120dvh] lg:h-[110dvh] md:mt-[50dvh] lg:mt-[30dvh] bg-red-">
         <div className="flex flex-col h-full w-full items-center justify-start mt-20">
           <span className="uppercase z-50">
-            <HeaderText type="cyan">
-              <StaggeredText>Projects</StaggeredText>{" "}
-            </HeaderText>
+            <Reveal>
+              <HeaderText type="cyan">
+                <StaggeredText>Projects</StaggeredText>{" "}
+              </HeaderText>
+            </Reveal>
           </span>
           <div className="flex flex-col lg:flex-wrap lg:flex-row w-full h-full ">
             <MovieReviews />

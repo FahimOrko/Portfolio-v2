@@ -4,6 +4,7 @@ import HeaderTextSecondary from "../HeaderTextSecondary";
 import ParaTextSecondary from "../ParaTextSecondary";
 import StaggeredText from "../StaggerdText";
 import LinkButton from "../LinkButton";
+import Reveal from "../Reveal";
 
 const ExpirenceCardRight = ({ workData, num }) => {
   if (workData) {
@@ -17,17 +18,27 @@ const ExpirenceCardRight = ({ workData, num }) => {
           </div>
           <div className="my-5 lg:mt-0 flex flex-col justify-between w-[90%] bg-card-bg-dark mx-6 px-4 py-6 rounded-lg shadow-lg border-4 border-cosmic-cyan-start hover:border-cosmic-cyan-end transition-all duration-300">
             <div className="flex flex-col md:flex-row justify-start md:divide-x-4 divide-cosmic-cyan-end md:items-center mb-4 md:mb-2">
-              <HeaderTextSecondary type="expSection">
-                <span className="text-cosmic-cyan-start">{workData.title}</span>
-              </HeaderTextSecondary>
-              <HeaderTextSecondary type="expSection">
-                <span className="text-cosmic-cyan-start">
-                  {workData.company}
-                </span>
-              </HeaderTextSecondary>
-              <HeaderTextSecondary type="expSection">
-                <span className="text-cosmic-cyan-start">{workData.date}</span>
-              </HeaderTextSecondary>
+              <Reveal>
+                <HeaderTextSecondary type="expSection">
+                  <span className="text-cosmic-cyan-start">
+                    {workData.title}
+                  </span>
+                </HeaderTextSecondary>
+              </Reveal>
+              <Reveal>
+                <HeaderTextSecondary type="expSection">
+                  <span className="text-cosmic-cyan-start">
+                    {workData.company}
+                  </span>
+                </HeaderTextSecondary>
+              </Reveal>
+              <Reveal>
+                <HeaderTextSecondary type="expSection">
+                  <span className="text-cosmic-cyan-start">
+                    {workData.date}
+                  </span>
+                </HeaderTextSecondary>
+              </Reveal>
             </div>
             <div>
               {workData.description?.map((item, idx) => (
@@ -38,15 +49,19 @@ const ExpirenceCardRight = ({ workData, num }) => {
                   <div className="mt-2">
                     <CircleIcon />
                   </div>
-                  <ParaTextSecondary type="exp">{item}</ParaTextSecondary>
+                  <Reveal>
+                    <ParaTextSecondary type="exp">{item}</ParaTextSecondary>
+                  </Reveal>
                 </div>
               ))}
             </div>
             <div className="mt-2">
               {workData.learnMore && (
-                <LinkButton type="exp" href={workData.learnMore}>
-                  Learn More
-                </LinkButton>
+                <Reveal>
+                  <LinkButton type="exp" href={workData.learnMore}>
+                    Learn More
+                  </LinkButton>
+                </Reveal>
               )}
             </div>
           </div>

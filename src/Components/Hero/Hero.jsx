@@ -1,7 +1,8 @@
 import "../../index.css";
 import videoBg from "/HeroBg.mp4";
-import Button from "../Button";
 import StaggerdText from "../StaggerdText";
+import Reveal from "../Reveal";
+import Button from "../Button";
 import HeaderText from "../HeaderText";
 import HeaderTextSecondary from "../HeaderTextSecondary";
 import ParaText from "../ParaText";
@@ -42,26 +43,39 @@ const Hero = () => {
         <div className="max-w-xs lg:max-w-4xl xl:max-w-6xl mx-auto h-full flex items-center">
           <div className="flex flex-col-reverse lg:flex-row justify-stretch items-center bg-slate-700  bg-opacity-30 backdrop-blur-lg rounded-lg w-full py-6 px-3 lg:py-10 lg:px-6">
             <div className="w-full text-white">
-              <HeaderText>
-                Hi, I'm <StaggerdText type="teal">Fahim</StaggerdText>{" "}
-                <StaggerdText type="teal">Abrar</StaggerdText>{" "}
-                <StaggerdText type="teal">Orko</StaggerdText>
-              </HeaderText>
-              <HeaderTextSecondary type="heroSection">
-                A Full-Stack Web Developer
-              </HeaderTextSecondary>
-              <ParaText>Based in Finland</ParaText>
-              <ParaTextSecondary type="hero">
-                I specialize in{" "}
-                <StaggerdText type="teal"> React.js</StaggerdText> for front-end
-                and <StaggerdText type="teal"> Express.js</StaggerdText> with{" "}
-                <StaggerdText type="teal"> MongoDB</StaggerdText> for back-end,
-                creating scalable and user-friendly web applications.
-              </ParaTextSecondary>
-              <div className="flex items-center justify-center gap-x-3 lg:gap-x-6 mb-4 lg:mb-8">
-                <Button onClick={onClick}>View my work</Button>
-                <Button onClick={handleEmailClick}>Contact Me</Button>
-              </div>
+              <Reveal type="hero">
+                <HeaderText>
+                  Hi, I'm <StaggerdText type="teal">Fahim</StaggerdText>{" "}
+                  <StaggerdText type="teal">Abrar</StaggerdText>{" "}
+                  <StaggerdText type="teal">Orko</StaggerdText>
+                </HeaderText>
+              </Reveal>
+              <Reveal type="hero">
+                <HeaderTextSecondary type="heroSection">
+                  A Full-Stack Web Developer
+                </HeaderTextSecondary>
+
+                <ParaText>Based in Finland</ParaText>
+              </Reveal>
+
+              <Reveal type="hero">
+                <ParaTextSecondary type="hero">
+                  I specialize in{" "}
+                  <StaggerdText type="teal"> React.js</StaggerdText> for
+                  front-end and{" "}
+                  <StaggerdText type="teal"> Express.js</StaggerdText> with{" "}
+                  <StaggerdText type="teal"> MongoDB</StaggerdText> for
+                  back-end, creating scalable and user-friendly web
+                  applications.
+                </ParaTextSecondary>
+              </Reveal>
+
+              <Reveal type="hero">
+                <div className="flex items-center justify-center gap-x-3 lg:gap-x-6 mb-4 lg:mb-8">
+                  <Button onClick={onClick}>View my work</Button>
+                  <Button onClick={handleEmailClick}>Contact Me</Button>
+                </div>
+              </Reveal>
             </div>
             <div className="w-full flex justify-center py-6 lg:py-10 place-items-start lg:place-items-end">
               <img

@@ -1,4 +1,5 @@
 import React from "react";
+import Reveal from "./Reveal";
 
 const ParaTextSecondary = ({ type, children }) => {
   const style = {
