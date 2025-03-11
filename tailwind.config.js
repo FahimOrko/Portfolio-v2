@@ -5,13 +5,8 @@ export default {
     extend: {
       backgroundImage: {
         "cosmic-cyan": "linear-gradient(to right, #00C9A7, #005F73)",
-        "hero-img": "url('./Herobg.jpg')",
-        "about-img": "url('./Aboutbg.jpg')",
-        "skills-img": "url('./Skillsbg.jpg')",
+
         "pp-img": "url('./PersonalPhoto.png')",
-        "primary-bg": "url('./Bgs/PrmaryBg.png')",
-        "primary-bg-svg": "url('./Bgs/PrmaryBg.svg')",
-        "primary-bg-mask": "url('./Bgs/PrimaryBgMask.png')",
 
         "midnight-dusk-only": "url('./assets/midnightDuskOnly.svg')",
         "midnight-dusk": "url('./assets/midnightDusk.svg')",
