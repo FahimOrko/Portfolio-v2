@@ -17,7 +17,7 @@ export default function App() {
 
   return (
     <div className="w-full h-fit bg-black/80 font-sans scroll-smooth">
-      {/* <Welcome /> */}
+      <Welcome />
       <Navbar />
       <Hero />
       <About />
