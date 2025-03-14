@@ -1,5 +1,5 @@
 import "../../index.css";
-import videoBg from "/HeroBg.mp4";
+import HeroBg from "/HeroBg.svg";
 import StaggerdText from "../StaggerdText";
 import Reveal from "../Reveal";
 import Button from "../Button";
@@ -28,14 +28,10 @@ const Hero = () => {
   return (
     <section id="hero">
       {/* bg video  */}
-      <video
-        src={videoBg}
+      <img
+        src={HeroBg}
         alt=""
-        autoPlay
-        muted
-        loop
-        playsInline
-        className="relative min-w-full h-[100dvh] object-cover object-center z-1 blur-sm opacity-80"
+        className="relative min-w-full h-[100dvh] object-cover object-left z-1 blur-[1px]"
       />
 
       {/* content  */}

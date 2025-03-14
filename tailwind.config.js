@@ -7,6 +7,7 @@ export default {
         "cosmic-cyan": "linear-gradient(to right, #00C9A7, #005F73)",
 
         "pp-img": "url('./PersonalPhoto.png')",
+        "hero-img": "url('./HeroBg.jpg')",
 
         "midnight-dusk-only": "url('./assets/midnightDuskOnly.svg')",
         "midnight-dusk": "url('./assets/midnightDusk.svg')",
@@ -17,6 +18,7 @@ export default {
 
         // projects
         "movie-reviews": "url('/Projects/MovieReviews.svg')",
+        "resturant-io": "url('/Projects/ResturantIO.svg')",
         "coming-soon": "url('/Projects/ComingSoon.svg')",
       },
       fontFamily: {
