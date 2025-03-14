@@ -9,7 +9,7 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="relative h-[240dvh] md:h-[180dvh] lg:h-[160dvh] w-full"
+      className="relative h-[270dvh] md:h-[180dvh] lg:h-[160dvh] w-full"
     >
       {/* Image Layer */}
       <div className="absolute inset-0 bg-midnight-dusk-fliped bg-cover bg-right-top bg-no-repeat z-0" />
