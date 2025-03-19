@@ -88,9 +88,9 @@ const Hero = () => {
             </div>
             <div className="w-full flex justify-center py-6 lg:py-10 place-items-start lg:place-items-end">
               <img
-                src="/PersonalPhoto.png"
+                src="./PersonalPhoto.jpg"
                 alt="Profile"
-                className="w-[30dvh] h-[30dvh] lg:w-[40dvh] lg:h-[40dvh] object-top object-cover shadow-lg rounded-full "
+                className="w-[30dvh] h-[30dvh] lg:w-[40dvh] lg:h-[40dvh] object-center object-cover shadow-lg rounded-full "
               />
             </div>
           </div>
