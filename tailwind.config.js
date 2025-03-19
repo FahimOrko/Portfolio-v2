@@ -6,7 +6,8 @@ export default {
       backgroundImage: {
         "cosmic-cyan": "linear-gradient(to right, #00C9A7, #005F73)",
 
-        "pp-img": "url('./PersonalPhoto.png')",
+        // "pp-img": "url('./PersonalPhoto.png')",
+        "pp-img": "url('./PersonalPhoto.jpg')",
         "hero-img": "url('./HeroBg.jpg')",
 
         "midnight-dusk-only": "url('./assets/midnightDuskOnly.svg')",
