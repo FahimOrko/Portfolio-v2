@@ -19,8 +19,10 @@ export default {
 
         // projects
         "movie-reviews": "url('/Projects/MovieReviews.svg')",
+        "track-finn": "url('/Projects/TrackFinn.svg')",
         "resturant-io": "url('/Projects/ResturantIO.svg')",
         "coming-soon": "url('/Projects/ComingSoon.svg')",
+        "the-blue-oasis": "url('/Projects/TheBlueOasis.svg')",
       },
       fontFamily: {
         sans: ["Inter", "sans-serif"],

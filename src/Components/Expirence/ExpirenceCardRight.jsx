@@ -59,7 +59,7 @@ const ExpirenceCardRight = ({ workData, num }) => {
               {workData.learnMore && (
                 <Reveal>
                   <LinkButton type="exp" href={workData.learnMore}>
-                    Learn More
+                    Read Blog
                   </LinkButton>
                 </Reveal>
               )}

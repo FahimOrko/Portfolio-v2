@@ -3,13 +3,15 @@ import StaggeredText from "../StaggerdText";
 import HeaderText from "../HeaderText";
 import ResturantIo from "./ResturantIo";
 import MovieReviews from "./MovieReviews";
+import TheBlueOasis from "./TheBlueOasis";
+import TrackFinn from "./TrackFinn";
 import Reveal from "../Reveal";
 
 const Projects = () => {
   return (
     <section
       id="projects"
-      className="relative h-[270dvh] md:h-[180dvh] lg:h-[160dvh] w-full"
+      className="relative h-[270dvh] md:h-[210dvh] lg:h-[160dvh] w-full"
     >
       {/* Image Layer */}
       <div className="absolute inset-0 bg-midnight-dusk-fliped bg-cover bg-right-top bg-no-repeat z-0" />
@@ -25,8 +27,11 @@ const Projects = () => {
             </Reveal>
           </span>
           <div className="flex flex-col lg:flex-wrap lg:flex-row w-full h-full ">
+            <TheBlueOasis />
+            <TrackFinn />
             <ResturantIo />
-            <MovieReviews />
+
+            {/* <MovieReviews /> */}
           </div>
         </div>
       </div>
