@@ -1,28 +1,30 @@
-import React from "react";
+import { FaDocker, FaGitAlt, FaNodeJs, FaReact } from "react-icons/fa";
+import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
 import {
-  AxiosIcon,
-  EjsIcon,
-  ExpressIcon,
-  FramerMotionIcon,
-  GitIcon,
-  JsIcon,
-  MongoDBIcon,
-  NodeIcon,
-  OpenCVIcon,
-  PythonIcon,
-  ReactIcon,
-  ReactQuerryIcon,
-  ReactRouterIcon,
-  ReduxIcon,
-  SupabaseIcon,
-  TailwindIcon,
-} from "../PageIcons";
+  SiAxios,
+  SiCypress,
+  SiExpress,
+  SiGithubactions,
+  SiGraphql,
+  SiJavascript,
+  SiJest,
+  SiMongodb,
+  SiOpencv,
+  SiPython,
+  SiReactquery,
+  SiReactrouter,
+  SiRedux,
+  SiSocketdotio,
+  SiSupabase,
+  SiTypescript,
+} from "react-icons/si";
+import { TbBrandFramerMotion } from "react-icons/tb";
 import HeaderText from "../HeaderText";
 import ParaTextSecondary from "../ParaTextSecondary";
+import Reveal from "../Reveal";
+import StaggerdText from "../StaggerdText";
 import SkillItemCard from "./SkillItemCard";
 import SkillItemSections from "./SkillItemSections";
-import StaggerdText from "../StaggerdText";
-import Reveal from "../Reveal";
 
 const Skills = () => {
   return (
@@ -55,40 +57,48 @@ const Skills = () => {
               <Reveal>
                 <SkillItemSections>
                   <SkillItemCard type="skillSection">
-                    <ReactIcon />
+                    <FaReact color="cyan" />
                     <ParaTextSecondary type="skill">React js</ParaTextSecondary>
                   </SkillItemCard>
                   <SkillItemCard type="skillSection">
-                    <ReactRouterIcon />
+                    <RiNextjsFill color="grey" />
+                    <ParaTextSecondary type="skill">Next JS</ParaTextSecondary>
+                  </SkillItemCard>
+                  <SkillItemCard type="skillSection">
+                    <SiReactrouter color="red" />
                     <ParaTextSecondary type="skill">
                       React Router
                     </ParaTextSecondary>
                   </SkillItemCard>
                   <SkillItemCard type="skillSection">
-                    <ReduxIcon />
+                    <SiRedux color="cyan" />
                     <ParaTextSecondary type="skill">Redux</ParaTextSecondary>
                   </SkillItemCard>
                   <SkillItemCard type="skillSection">
-                    <ReactQuerryIcon />
+                    <SiReactquery color="purple" />
                     <ParaTextSecondary type="skill">
-                      React Querry
+                      Tan Stack
                     </ParaTextSecondary>
                   </SkillItemCard>
                   <SkillItemCard type="skillSection">
-                    <TailwindIcon />
+                    <RiTailwindCssFill color="cyan" />
                     <ParaTextSecondary type="skill">
                       Tailwind Css
                     </ParaTextSecondary>
                   </SkillItemCard>
                   <SkillItemCard type="skillSection">
-                    <FramerMotionIcon />
+                    <TbBrandFramerMotion color="pink" />
                     <ParaTextSecondary type="skill">
                       Framer Motion
                     </ParaTextSecondary>
                   </SkillItemCard>
                   <SkillItemCard type="skillSection">
-                    <EjsIcon />
-                    <ParaTextSecondary type="skill">EJS</ParaTextSecondary>
+                    <SiJest color="red" />
+                    <ParaTextSecondary type="skill">Jest</ParaTextSecondary>
+                  </SkillItemCard>
+                  <SkillItemCard type="skillSection">
+                    <SiCypress color="gray" />
+                    <ParaTextSecondary type="skill">Cypress</ParaTextSecondary>
                   </SkillItemCard>
                 </SkillItemSections>
               </Reveal>
@@ -104,26 +114,40 @@ const Skills = () => {
               <Reveal>
                 <SkillItemSections>
                   <SkillItemCard type="skillSection">
-                    <NodeIcon />
+                    <FaNodeJs color="green" />
                     <ParaTextSecondary type="skill">Node js</ParaTextSecondary>
                   </SkillItemCard>
                   <SkillItemCard type="skillSection">
-                    <ExpressIcon />
+                    <SiExpress color="green" />
                     <ParaTextSecondary type="skill">
                       Express js
                     </ParaTextSecondary>
                   </SkillItemCard>
                   <SkillItemCard type="skillSection">
-                    <MongoDBIcon />
+                    <SiMongodb color="green" />
                     <ParaTextSecondary type="skill">Mongo DB</ParaTextSecondary>
                   </SkillItemCard>
                   <SkillItemCard type="skillSection">
-                    <SupabaseIcon />
+                    <SiSupabase color="cyan" />
                     <ParaTextSecondary type="skill">SupaBase</ParaTextSecondary>
                   </SkillItemCard>
                   <SkillItemCard type="skillSection">
-                    <AxiosIcon />
+                    <SiAxios color="purple" />
                     <ParaTextSecondary type="skill">Axios</ParaTextSecondary>
+                  </SkillItemCard>
+                  <SkillItemCard type="skillSection">
+                    <SiJest color="red" />
+                    <ParaTextSecondary type="skill">Jest</ParaTextSecondary>
+                  </SkillItemCard>
+                  <SkillItemCard type="skillSection">
+                    <SiGraphql color="pink" />
+                    <ParaTextSecondary type="skill">GraphQL</ParaTextSecondary>
+                  </SkillItemCard>
+                  <SkillItemCard type="skillSection">
+                    <SiSocketdotio color="gray" />
+                    <ParaTextSecondary type="skill">
+                      Socket IO
+                    </ParaTextSecondary>
                   </SkillItemCard>
                 </SkillItemSections>
               </Reveal>
@@ -139,23 +163,39 @@ const Skills = () => {
               <Reveal>
                 <SkillItemSections>
                   <SkillItemCard type="skillSection">
-                    <PythonIcon />
+                    <SiPython color="yellow" />
                     <ParaTextSecondary type="skill">Python</ParaTextSecondary>
                   </SkillItemCard>
                   <SkillItemCard type="skillSection">
-                    <JsIcon />
+                    <SiJavascript color="yellow" />
                     <ParaTextSecondary type="skill">
                       Javascript
                     </ParaTextSecondary>
                   </SkillItemCard>
                   <SkillItemCard type="skillSection">
-                    <GitIcon />
+                    <SiTypescript color="blue" />
+                    <ParaTextSecondary type="skill">
+                      TypeScript
+                    </ParaTextSecondary>
+                  </SkillItemCard>
+                  <SkillItemCard type="skillSection">
+                    <FaGitAlt color="orange" />
                     <ParaTextSecondary type="skill">
                       Version Control
                     </ParaTextSecondary>
                   </SkillItemCard>
                   <SkillItemCard type="skillSection">
-                    <OpenCVIcon />
+                    <SiGithubactions color="pink" />
+                    <ParaTextSecondary type="skill">
+                      Github Actions
+                    </ParaTextSecondary>
+                  </SkillItemCard>
+                  <SkillItemCard type="skillSection">
+                    <FaDocker color="teal" />
+                    <ParaTextSecondary type="skill">Docker</ParaTextSecondary>
+                  </SkillItemCard>
+                  <SkillItemCard type="skillSection">
+                    <SiOpencv color="cyan" />
                     <ParaTextSecondary type="skill">Open CV</ParaTextSecondary>
                   </SkillItemCard>
                 </SkillItemSections>
