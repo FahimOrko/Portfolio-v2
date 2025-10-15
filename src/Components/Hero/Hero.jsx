@@ -8,14 +8,15 @@ import HeaderText from "../HeaderText";
 import HeaderTextSecondary from "../HeaderTextSecondary";
 import ParaText from "../ParaText";
 import ParaTextSecondary from "../ParaTextSecondary";
+import { Link } from "@mui/material";
 
 const Hero = () => {
   const onClick = () => {
     const element = document.getElementById("projects");
     if (element) {
-      const offset = element.getBoundingClientRect().height / 2; // Get half of the element's height
+      const offset = element.getBoundingClientRect().height / 2;
       window.scrollTo({
-        top: element.offsetTop - window.innerHeight / 2 + offset, // Adjust to center it
+        top: element.offsetTop - window.innerHeight / 2 + offset,
         behavior: "smooth",
       });
     }
@@ -27,7 +28,7 @@ const Hero = () => {
   };
 
   return (
-    <section id="hero">
+    <section id="hero select-none">
       {/* bg vid  */}
 
       {/* <video
@@ -49,6 +50,17 @@ const Hero = () => {
 
       {/* content  */}
       <div className="h-[100dvh] w-full absolute top-0">
+        <div className="absolute text-stone-200 bg-violet-600 mx-auto w-full text-center text-wrap text-lg md:text-xl px-2 py-1 sm:px-3 sm:py-1.5 md:px-4 md:py-3 lg:px-5 lg:py-4">
+          A new version of my portfolio is available{" "}
+          <a
+            href={"https://portfolio-v3-two-peach.vercel.app/"}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`text-stone-300 shadow-lg bg-stone-800 text-center px-2 py-1 sm:px-3 sm:py-1.5 rounded-md`}
+          >
+            Check it out here
+          </a>
+        </div>
         <div className="max-w-xs lg:max-w-4xl xl:max-w-6xl mx-auto h-full flex items-center">
           <div className="flex flex-col-reverse lg:flex-row justify-stretch items-center bg-slate-700  bg-opacity-30 backdrop-blur-lg rounded-lg w-full py-6 px-3 lg:py-10 lg:px-6">
             <div className="w-full text-white">
